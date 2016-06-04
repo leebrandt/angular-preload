@@ -1,23 +1,53 @@
 .characters, .planets {
 	width: 50%;
-	border: solid 1px #F00;
 }
-.characters ul {
-	list-style: none;
-	border: solid 1px #CCC;
+ul {
+	padding: 0;
+	display: table;
+	list-style-type: none;
+	position: relative;
+	width: 100%;
+	border-bottom: dotted 1px #444;
 }
 
-.characters ul li {
+ul li.header{
+	font-weight: bold;
 	display: table-row;
 }
-.characters ul li span{
+
+ul li.header span {
+		border-bottom: dotted 1px #444;
+}
+
+ul li {
+	display: table-row;
+	width: 100%;
+}
+
+ul li span{
 	display: table-cell;
-	padding: 0 1rem;
+	width: 33%;
+	padding: 0 .25rem;
 }
 
 li.placeholder{
-	color: #CCC;
-	line-height: 1rem;
-	margin-top: .25rem;
+	display: table-row;
+}
+
+li.placeholder span{
+	display: table-cell;
+	border: solid .2rem #FFF;
+	/*background: repeating-linear-gradient(
+	  -55deg,
+	  #DDD,
+	  #DDD .1rem,
+	  #EEE .1rem,
+	  #EEE .2rem
+	);*/
+	
+  background-color: #EEE;
+  background-size: .1rem .1rem;
+	height: .75rem;
+	width: auto;
 }
 

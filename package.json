@@ -4,8 +4,12 @@
   "description": "Testing loading 'blanks' into content while loading",
   "main": "application.js",
   "scripts": {
+  	"start": "httpster",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "leebrandt@gmail.com",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "httpster": "^1.0.3"
+  }
 }
