@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>Testing loading blanks for Angular</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <h1>Application!</h1>
+  <ul>
+    <li><a ui-sref="character-list">Characters</a></li>
+    <li><a ui-sref="planet-list">Planets</a></li>
+  </ul>
+  <ui-view></ui-view>  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.5.6/angular-resource.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.min.js"></script>
+  <script src="application.js"></script>
+  <script src="components/characters/characters.module.js"></script>
+  <script src="components/planets/planets.module.js"></script>
+  <script src="components/characters/controllers/characters.controller.js"></script>
+  <script src="components/characters/services/characters.service.js"></script>
+  <script src="components/planets/controllers/planets.controller.js"></script>
+  <script src="components/planets/services/planets.service.js"></script>
+  <script src="components/common/interceptors/http.error.interceptor.js"></script>
+  <script src="components/common/directives/placeholder.directive.js"></script>
+</body>
+</html>

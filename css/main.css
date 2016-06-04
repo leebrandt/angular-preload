@@ -1,0 +1,23 @@
+.characters, .planets {
+	width: 50%;
+	border: solid 1px #F00;
+}
+.characters ul {
+	list-style: none;
+	border: solid 1px #CCC;
+}
+
+.characters ul li {
+	display: table-row;
+}
+.characters ul li span{
+	display: table-cell;
+	padding: 0 1rem;
+}
+
+li.placeholder{
+	color: #CCC;
+	line-height: 1rem;
+	margin-top: .25rem;
+}
+

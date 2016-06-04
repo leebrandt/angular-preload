@@ -1,0 +1,8 @@
+<section class="planets" ng-controller="PlanetsCtrl as vm" ng-init="vm.loadPlanets()">
+	<h2>Planets of Star Wars</h2>
+	<ul placeholder number-of-rows="5" number-of-cells="1" hide-placeholders="vm.planets.$resolved">
+		<li ng-repeat="planet in vm.planets.results | limitTo: 5">
+			<span ng-bind="planet.name"></span>
+		</li>
+	</ul>
+</section>

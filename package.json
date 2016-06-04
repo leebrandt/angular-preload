@@ -1,0 +1,11 @@
+{
+  "name": "angular-preload",
+  "version": "1.0.0",
+  "description": "Testing loading 'blanks' into content while loading",
+  "main": "application.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "leebrandt@gmail.com",
+  "license": "ISC"
+}
